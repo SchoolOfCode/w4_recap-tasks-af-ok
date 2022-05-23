@@ -1,0 +1,35 @@
+Retrieve Users by Id
+    - create get function with the parameter id route
+    - Create variable to store parsed parameter number 
+    - Search through User array to see if there is a match between user ids
+            and the body id. 
+        - I can use array.find instead of using  a for loop here
+        - I can use the nullish coalescing operator 
+            to return a string explaining user id does not match records if it fails.
+    - Realised I am consistently repeating myself with my response so added and
+        object constructor function to make code more DRY.
+        - Test in postman
+
+Create new User
+    - create post function
+    - create variable to store newUser received from client
+    - ensure app.js has a function that parses the body
+    - add new user to users array
+    - return response object 
+    - Test in postman
+
+
+Update user by Id
+    - check if updating is done with .patch (it is)
+    - create patch function with params route Id
+    - search through users to find a match with params.id
+    - replace given user with the new user
+    - Find the index of that found user in the users array
+    - Use if statement to check if a user was found if they were update user array using the foundUserIndex 
+    - Test in postman
+
+
+Delete user by Id
+    - Get deleted user params
+    - set variable with 
+
