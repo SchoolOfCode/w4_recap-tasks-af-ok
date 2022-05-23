@@ -1,11 +1,5 @@
 import express from "express";
-import {
-  getUserByID,
-  getUsers,
-  createUser,
-  updateUserByID,
-  deleteUserByID,
-} from "./models/users.js";
+
 import userRouter from "./routes/users.js";
 
 const PORT = 3000;
